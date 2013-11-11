@@ -17,8 +17,8 @@ def _get_one_course(line):
     course_discipline = mo.group(1).split(u'，')
     return (course_name, course_discipline)
 
-def get_all_courses():
-    fr = open('raw/ginm-courses.txt')
+def get_all_courses(fname):
+    fr = open(fname)
     lines = fr.readlines()
     idx = 1
     courses = []
@@ -32,10 +32,10 @@ def get_all_courses():
             idx += 1
     return courses
 
-if __name__ == '__main__':
-    courses = get_all_courses()
+def update_courses(fname):
+    courses = get_all_courses(fname)
+    models.Course.objects.all().delete()
     for course in courses:
-        print course[0],
-        for disc in course[1]:
-            print disc,
-        print
+        coursee = models.Course(name=course[0], discipline=','.join(course[1]))
+        coursee.save()
+
