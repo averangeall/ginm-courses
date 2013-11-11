@@ -1,0 +1,3 @@
+(function() {
+    $('#course-input').focus();
+})();

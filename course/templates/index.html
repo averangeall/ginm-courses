@@ -1,0 +1,49 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>台大網媒所看你還差多少</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="shortcut icon" href="{% static "images/favicon.ico" %}" type="image/ico">
+        <link rel="stylesheet" type="text/css" href="{% static "css/flat-ui.css" %}"></link>
+        <link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}"></link>
+    </head>
+
+    <body>
+        <div id="main-block">
+            <h1>台大網媒所看你還差多少</h1>
+            <input type="text" id="course-input" class="form-control" placeholder="請輸入您修過的課" />
+            <div id="course-list" class="todo">
+                <ul>
+                    <li class="todo-name">數位訊號處理導論</li>
+                    <li class="todo-name">資訊理論與編碼技巧</li>
+                    <li class="todo-name">多媒體安全</li>
+                    <li class="todo-name">計算機網路</li>
+                    <li class="todo-name">軟體工程</li>
+                    <li class="todo-name">軟體產業之經營策略</li>
+                    <li class="todo-name">計算機圖形</li>
+                    <li class="todo-name">虛擬實境</li>
+                    <li class="todo-name">電腦視覺（電腦視覺（一）</li>
+                    <li class="todo-name">高等電腦視覺（電腦視覺（二）</li>
+                    <li class="todo-name">數位影像處理</li>
+                    <li class="todo-name">圖形分析辨認</li>
+                    <li class="todo-name">影像式塑模與描繪</li>
+                    <li class="todo-name">資訊與數位通訊</li>
+                    <li class="todo-name">數位語音處理</li>
+                    <li class="todo-name">視訊信號處理</li>
+                    <li class="todo-name">網路與電腦安全</li>
+                    <li class="todo-name">網路資訊安全（二）</li>
+                    <li class="todo-name">資訊檢索與擷取</li>
+                    <li class="todo-name">數位圖書館與博物館研討</li>
+                    <li class="todo-name">通道編碼</li>
+                </ul>
+            </div>
+        </div>
+        <div id="right-block">
+        </div>
+    </body>
+    <script src="{% static "js/jquery-1.8.2.min.js" %}"></script>
+    <script src="{% static "js/index.js" %}"></script>
+</html>
+

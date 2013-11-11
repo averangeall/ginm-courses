@@ -1,0 +1,21 @@
+body {
+    background: #BDC3C7;
+}
+
+#main-block {
+    text-align: center;
+}
+
+#course-input {
+    margin-top: 65px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+}
+
+#course-list {
+    margin: 0 auto;
+    width: 450px;
+    top: 300px;
+}

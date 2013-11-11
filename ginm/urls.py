@@ -5,6 +5,8 @@ from django.conf.urls import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+    url(r'^$', 'course.views.index'),
+
     # Examples:
     # url(r'^$', 'ginm.views.home', name='home'),
     # url(r'^ginm/', include('ginm.foo.urls')),
